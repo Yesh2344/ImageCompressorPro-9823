@@ -13,3 +13,5 @@ Upload an image (JPEG/PNG) from the browser, the backend compresses it using Pil
 - Unit tests for core compression logic
 
 ## Project Structure
+
+<!-- noticed this could be clearer -->
