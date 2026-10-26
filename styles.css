@@ -1,0 +1,77 @@
+/* Reset & basic layout */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Upload UI */
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fileInput {
+    display: none;
+}
+.drop-zone {
+    border: 2px dashed #6c63ff;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background .2s;
+    width: 100%;
+}
+.drop-zone:hover,
+.drop-zone.dragover {
+    background: #e8e6ff;
+}
+#preview {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+button {
+    margin-top: 1rem;
+    padding: .6rem 1.2rem;
+    font-size: 1rem;
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}
+.status {
+    margin-top: .8rem;
+    font-size: .9rem;
+    color: #d9534f;
+}
+.status.success {
+    color: #28a745;
+}
