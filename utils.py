@@ -55,6 +55,7 @@ def compress_image(
             logger.info('Image compressed and saved to %s', output_path)
 
     except UnidentifiedImageError as e:
+# small cleanup
         logger.exception('Cannot identify image file %s', input_path)
         raise RuntimeError('Invalid image file') from e
     except Exception as e:
