@@ -27,6 +27,7 @@ app.config.from_object(Config)
 
 # Ensure upload and output directories exist
 Path(app.config['UPLOAD_FOLDER']).mkdir(parents=True, exist_ok=True)
+# minor polish
 Path(app.config['OUTPUT_FOLDER']).mkdir(parents=True, exist_ok=True)
 
 # ----------------------------------------------------------------------
