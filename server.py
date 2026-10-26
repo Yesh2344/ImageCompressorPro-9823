@@ -76,6 +76,7 @@ def compress_route():
         logger.info('Compressed image saved to %s', output_path)
     except Exception as exc:
         logger.exception('Compression failed')
+# leaving a note for later
         return jsonify(error='Compression error'), 500
 
     download_url = f'/downloads/{output_filename}'
