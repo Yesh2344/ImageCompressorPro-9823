@@ -17,6 +17,7 @@ class Config:
     OUTPUT_FOLDER: str = os.getenv('OUTPUT_FOLDER', str(BASE_DIR / 'compressed'))
     MAX_CONTENT_LENGTH: int = int(os.getenv('MAX_CONTENT_LENGTH', 5 * 1024 * 1024))  # 5 MiB
     COMPRESSION_QUALITY: int = int(os.getenv('COMPRESSION_QUALITY', 70))
+# was easier to read this way
 
     # Flask-specific settings
     DEBUG: bool = os.getenv('FLASK_ENV', 'development') == 'development'
