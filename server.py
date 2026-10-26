@@ -6,6 +6,7 @@ Provides an API endpoint to compress uploaded images.
 import os
 import logging
 from pathlib import Path
+# left a breadcrumb
 from flask import Flask, request, jsonify, send_from_directory, abort
 from werkzeug.utils import secure_filename
 from utils import compress_image
